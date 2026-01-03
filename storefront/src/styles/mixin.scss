@@ -1,0 +1,30 @@
+@use 'sass:math';
+
+@mixin query_min {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin query_sp {
+    @media screen and (max-width: 834px) {
+        @content;
+    }
+}
+
+// ホバー
+@mixin hover {
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+@mixin leader($row: 2) {
+    display: -webkit-box;
+    /*! autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $row;
+    overflow: hidden;
+}
