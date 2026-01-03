@@ -1,0 +1,16 @@
+{
+  "servers": {
+    "medusa": {
+      "type": "http",
+      "url": "https://docs.medusajs.com/mcp"
+    },
+    "nextjs": {
+      "type": "http",
+      "url": "https://mcp-nextjs-docs.vercel.app/api/mcp" 
+    },
+    "radix": {
+      "type": "http",
+      "url": "https://radix-mcp.vercel.app/api/mcp"
+    }
+  }
+}
